@@ -38,14 +38,14 @@ You may submit your solutions in one of two ways:
 ### Option A (Recommended)
 
 Upload your solution file as:
-- Text file (`.txt`)  
 - Python file (`.py`)  
-- Jupyter notebook (`.ipynb`) in the itslearning:
-  
+- Jupyter notebook (`.ipynb`)
+- Text file (`.txt`)
+in itslearning as :
 - Filename format: `yourname_sheetXX.py`
 
 If the sheet contains math exercises as well, upload these in a different pdf. 
-You can also upload a single file containing both, but if the coding assignemt cannot simply be copy-pasted, it does not count (e.g. do not copy code into a Latex file).
+You can also upload a single file containing both, but if the coding assignment cannot simply be copy-pasted, it does not count (e.g. do not copy code into a Latex file).
 
 ### Option B (At your own risk)
 
