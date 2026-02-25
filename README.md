@@ -19,9 +19,9 @@ Each folder contains:
 ```
 git clone https://github.com/jurekbl/qkqcd_26_coding_tasks.git
 ```
-2. Install the required packages:
-2.1 ***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment!*** <br>
-Run
+2. Install the required packages:<br>
+***Especially in Python 3.12 it is highly recommended to install the packages locally in a virtual environment!*** <br>
+For this, run
 ```
 python3 -m venv venv
 source venv/bin/activate
