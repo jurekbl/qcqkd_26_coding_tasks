@@ -37,7 +37,7 @@ git pull
 4. Do **not** modify interface files unless instructed to avoid pulling issues for upcoming sheets.
 
 ### Option B
-- Copy the interface code from the browser and paste it in your favorite environment. Make sure to install all packages from requiremnts.txt (locally is recommended when working in Python 3.12, Option A)
+- Copy the interface code from the browser and paste it in your favorite environment. Make sure to install all packages from requirements.txt (locally is recommended when working in Python 3.12, see Option A)
   
 ---
 
