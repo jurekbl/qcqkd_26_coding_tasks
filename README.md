@@ -20,21 +20,27 @@ Each folder contains:
 git clone https://github.com/jurekbl/qkqcd_26_coding_tasks.git
 ```
 2. Install the required packages:
-```
-pip install -r requirements.txt
- ```
-***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment!*** 
+2.1 ***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment!*** <br>
 Run
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
-4. Pull updates weekly:
+Install the packages by
+```
+pip install -r requirements.txt
+ ```
+
+3. Pull updates weekly:
 ```
 git pull
 ```
-3. Work only in the folder for the current sheet.  
-4. Do **not** modify interface files unless instructed to avoid pulling issues for upcoming sheets.
+There could be new requirements, so run 
+```
+pip install -r requirements.txt
+ ```
+Work only in the folder for the current sheet.  <br>
+Do **not** modify interface files unless instructed to avoid pulling issues for upcoming sheets.
 
 ### Option B
 - Copy the interface code from the browser and paste it in your favorite environment. Make sure to install all packages from requirements.txt (locally is recommended when working in Python 3.12, see Option A)
