@@ -15,19 +15,26 @@ Each folder contains:
 
 ## How to Use
 ### Option A
-1. Clone the repo:
-
+1. Clone the repo via HTTPS (it is public, no SSH needed):
+```
 git clone https://github.com/jurekbl/qkqcd_26_coding_tasks.git
-
-2. Pull updates weekly:
-
+```
+2. Install the required packages:
+``` pip install -r requirements.txt ```
+***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment*** Run
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+4. Pull updates weekly:
+```
 git pull
-
+```
 3. Work only in the folder for the current sheet.  
-4. Do **not** modify interface files unless instructed.
+4. Do **not** modify interface files unless instructed to avoid pulling issues for upcoming sheets.
 
 ### Option B
-- Copy the interface code and paste it in your favorite environment.
+- Copy the interface code from the browser and paste it in your favorite environment. Make sure to install all packages from requiremnts.txt (locally is recommended when working in Python 3.12, Option A)
   
 ---
 
