@@ -23,7 +23,8 @@ git clone https://github.com/jurekbl/qkqcd_26_coding_tasks.git
 ```
 pip install -r requirements.txt
  ```
-***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment*** Run
+***In Python 3.12 it is highly recommended to install the packages locally in a virtual environment!*** 
+Run
 ```
 python3 -m venv venv
 source venv/bin/activate
