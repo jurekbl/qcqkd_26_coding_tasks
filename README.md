@@ -1,15 +1,15 @@
 # qcqkd_26_coding_tasks
-This repository contains the interface code for the coding assignments in QC805: Quantum Cryptography and Quantum Key Distribution at SDU in spring term 2026
+This repository contains the coding assignments in QC805: Quantum Cryptography and Quantum Key Distribution at SDU in spring term 2026.
 
 ## Repository Structure
 - Each sheet has its own folder
   
 Each folder contains:
-- Interface files 
-- Optional instructions for the assignment  
+- Code Interface files, amount of provided code depends on the length of the exercises  
+- Instructions for the assignment  
 - Optional example input/output  
 
-**Important:** This repo does **not** contain solutions. All full implementations are kept in a separate private repository.
+**Important:** This repo does **not** contain solutions. Implementations are kept in a separate private repository and pushed to this repository if solutions of older tasks are necessary. 
 
 ---
 
@@ -68,7 +68,7 @@ You can also upload a single file containing both, but if the coding assignment 
 You can create a **public Git repository** containing your solution and share the link in itslearning. 
 
 - **Important**: something (a comment including the repo-link suffices) has to be added to itslearning, otherwise the assignment cannot be graded.
-- You are fully responsible — if it does not work, it counts as 0 points (this is not a class about GitHub).
+- You are fully responsible — if it does not work, it counts as failed (this is not a class about GitHub).
 
 ---
 
