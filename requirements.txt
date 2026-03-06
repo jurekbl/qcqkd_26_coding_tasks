@@ -1,2 +1,5 @@
 qiskit
 qiskit-aer
+ipython
+sympy
+numpy
