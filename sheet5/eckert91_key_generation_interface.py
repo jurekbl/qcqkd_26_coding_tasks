@@ -28,8 +28,9 @@ def create_bell_circuit_e91() -> QuantumCircuit:
 
 def generate_shots_e91(shots: int) -> List[Tuple[int, int, Dict[str,int]]]:
   """
-  Utilizes the 9 quantum circuits of create_bell_circuit_e91 with shots number of shots, to return an ordered list
-  of the form [...[A_i, B_j, {"outcome1": number of outcome1, "outcome2": number of outcome2,...}, [...]]
+  Utilizes the single bell state circuit of create_bell_circuit_e91 depending on the 9 different measurements,
+  with shots number of shots. Returns an ordered list of the form
+  [...[A_i, B_j, {"outcome1": number of outcome1, "outcome2": number of outcome2,...}, [...]]
   where 1<=i,j<=3 and A_i is Alice's and B_j is Bob's basis in the notation of Sheet 5.
   In the Dict each key "outcome" is a measurement outcome of Alice's and Bob's qubits and the
   value is the number of times this outcome occurred in repeated circuit runs ("shots").
