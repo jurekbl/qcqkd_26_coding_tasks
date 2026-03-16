@@ -153,7 +153,7 @@ def calculate_syndromes_entangled_bb84(qc: QuantumCircuit, H: np.ndarray, check_
   by finding the most likely error class rather than just return the minimum weight vector. 
   
 - We use the brute force min weight calculation, it is arguably less tedious to code and works for small t. 
-- The code here is provided.
+- The code is provided.
 """
 
 
