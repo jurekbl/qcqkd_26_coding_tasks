@@ -99,7 +99,7 @@ def measure_entangled_bb84(qc: QuantumCircuit) -> Tuple[np.ndarray,np.ndarray,np
     return alice_bits, bob_bits, None
 
 
-def calculate_syndromes_entangled_bb84(qc: QuantumCircuit, H: np.array, check_bits: np.ndarray) \
+def calculate_syndromes_entangled_bb84(qc: QuantumCircuit, H: np.ndarray, check_bits: np.ndarray) \
         -> Tuple[np.ndarray, np.ndarray]:
     """
     Apply Steane stabilizers with respect to a matrix H to a QuantumCircuit and calculate the syndromes of Alice and Bob.
@@ -143,23 +143,23 @@ def calculate_syndromes_entangled_bb84(qc: QuantumCircuit, H: np.array, check_bi
 
 
 """ ---- NOTE: BRUTE-FORCE MINIMUM WEIGHT DECODING: ---
-- Solving the equation He = s has non unique solutions. 
+- Solving the equation He = s over F_2 in general has non unique solutions. 
 - The error e giving the correction is the minimum weight of these solutions.
 - Finding the minimum weight solution is NP-Hard.
 - For non-degenerate codes (like Hamming) every syndrome has a unique correction:
 ->  Alternatively implement a dictionary which syndrome gives which correction (also done by testing possible errors)
 
 - Real-world decoders can handle Degeneracy. Here different error patterns are logically equivalent—
-  by finding the most likely error class rather than just the shortest vector. 
+  by finding the most likely error class rather than just return the minimum weight vector. 
   
 - We use the brute force min weight calculation, it is arguably less tedious to code and works for small t. 
 - The code here is provided.
 """
 
 
-def solve_syndrome(H: np.array, s: np.ndarray) -> np.ndarray:
+def solve_syndrome(H: np.ndarray, s: np.ndarray) -> np.ndarray:
     """
-    Brute forces the shortest error vector e such that He = s. Not feasible for large n.
+    Brute forces the minimum weight error vector e such that He = s over F_2. Not feasible for large n.
     :param H: matrix H.
     :param s: vector s.
     :return: solution vector e.
@@ -185,7 +185,7 @@ def solve_syndrome(H: np.array, s: np.ndarray) -> np.ndarray:
     return np.zeros(num_qubits, dtype=int)
 
 
-def calculate_error_entangled_bb85(s_a: np.ndarray, s_b: np.ndarray, H: np.array) -> Tuple[np.ndarray, np.ndarray]:
+def calculate_error_entangled_bb85(s_a: np.ndarray, s_b: np.ndarray, H: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """
     Calculate the error rates e according to He = s (mod 2).
     :param s_a: Alice's syndrome.
