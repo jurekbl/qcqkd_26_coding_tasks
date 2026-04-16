@@ -65,8 +65,7 @@ def compute_q_noisy_diqkd(alice_raw_key: np.ndarray, bob_raw_key: np.ndarray) ->
 
 def compute_s_noisy_diqkd(measures: dict) -> float:
     """
-    Takes a dict of all measurements w.r.t. basis A1,A2,B1 and B2 and computes the amount of mismatches in
-    the computational basis and the CHSH bound for w.r.t. to A1, A2, B1, B2.
+    Takes a dict of all measurements w.r.t. basis A1,A2,B1 and B2 and computes the CHSH bound.
     :param measures: dict of all measurements.
     :return: Tuple of form (mean of #mismatches/#qubits in computational basis, CHSH estimation).
     """
