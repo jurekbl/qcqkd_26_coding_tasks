@@ -67,7 +67,7 @@ def compute_s_noisy_diqkd(measures: dict) -> float:
     """
     Takes a dict of all measurements w.r.t. basis A1,A2,B1 and B2 and computes the CHSH bound.
     :param measures: dict of all measurements.
-    :return: Tuple of form (mean of #mismatches/#qubits in computational basis, CHSH estimation).
+    :return: CHSH estimation.
     """
     #TODO
     return None
