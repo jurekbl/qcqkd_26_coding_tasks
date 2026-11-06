@@ -194,7 +194,7 @@ def calculate_error_entangled_bb85(s_a: np.ndarray, s_b: np.ndarray, H: np.ndarr
     :return: A tuple [e_x, e_z], with e_x the first #rows(H) entries of e and e_z the second #rows(H) entries of e.
     """
     s = (s_a + s_b) % 2
-    num_stab = len(H[0])
+    num_stab = H[0].shape
     s_x = s[:num_stab] # entries for X
     s_z = s[num_stab:] #entries for Z
     e_x = solve_syndrome(H, s_x)
